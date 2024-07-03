@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harrison's Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./my-profile.css">
+    </head>
+    <body>
+        <main>
+            <div class="image-div-container" data-testid="slackProfilePicture">
+                <div class="image-div">
+                    <img src="./images/e22d103b-2acf-4eb0-bc1a-f84943f0e727.JPG" alt="">
+                </div>
+            </div>
+            <h3 class="name" data-testid="slackDisplayName">Harrison Olufemi Orimolade</h3>
+            <p class="dets" data-testid="slackEmail">Slack Email: harrisonfemi@yahoo.com</p>
+            <p class="dets" data-testid="currentTimeUTC" id="current-time">Current time(UTC):</p>
+            <script>
+                function getCurrentTime() {
+                    const time = new Date();
+                    return 'Time(UTC): ' + time.getMilliseconds();
+                }
+
+                const  timeDisplay = document.getElementById("current-time");
+                timeDisplay.innerHTML = getCurrentTime();
+            </script>
+            <p class="dets" data-testid="currentDay" id="current-week-day">Date: </p>
+            <script>
+                function getCurrentDay() {
+                    const day = new Date();
+                    return 'Date: ' + day.toDateString();
+                    console.log('Day: ' + d);
+                }
+
+                const  dayDisplay = document.getElementById("current-week-day");
+                dayDisplay.innerHTML = getCurrentDay();
+            </script>
+            <div class="goals-in-2">
+                <h4>My goals in 2 years:</h4>
+                <p>
+                    - To be remotely employed and earning in USD <br>
+                    - To have attained mid-level developer status, according to industry standards <br>
+                    - To have at least 3-5 mentees who are properly skilled under my tutorship <br>
+                    - To be a significant member of a team that has undertaken major web development projects
+                </p>
+            </div> <br>
+            <div>
+                <h4>Other helpful links:</h4>
+                <p>
+                    <a data-testid="hngLink" href="http://hng.tech/learn">HNG</a>
+                    <a data-testid="keywordLink" href="http://keyword.dog/">Keyword</a>
+                    <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/">Scrapeanyweb</a>
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
