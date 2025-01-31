@@ -9,13 +9,15 @@
     </head>
     <body>
         <main>
-            <div class="image-div-container" data-testid="slackProfilePicture">
+            <div class="image-div-container" data-testid="profilePicture">
                 <div class="image-div">
                     <img src="./images/e22d103b-2acf-4eb0-bc1a-f84943f0e727.JPG" alt="">
                 </div>
             </div>
-            <h3 class="name" data-testid="slackDisplayName">Harrison Olufemi Orimolade</h3>
-            <p class="dets" data-testid="slackEmail">Slack Email: harrisonfemi@yahoo.com</p>
+            <h3 class="name" data-testid="fullName">Harrison Olufemi Orimolade</h3>
+            <p class="dets" data-testid="emailAddress">Slack Email: harrisonfemi@yahoo.com</p>
+            <p class="dets" data-testid="jobTitle">Job Title: Frontend Developer</p>
+            <p class="dets" data-testid="currentLocation">Current Location: Lagos, Nigeria</p>
             <p class="dets" data-testid="currentTimeUTC" id="current-time">Current time(UTC):</p>
             <script>
                 function getCurrentTime() {
@@ -26,7 +28,7 @@
                 const  timeDisplay = document.getElementById("current-time");
                 timeDisplay.innerHTML = getCurrentTime();
             </script>
-            <p class="dets" data-testid="currentDay" id="current-week-day">Date: </p>
+<!--             <p class="dets" data-testid="currentDay" id="current-week-day">Date: </p>
             <script>
                 function getCurrentDay() {
                     const day = new Date();
@@ -36,22 +38,25 @@
 
                 const  dayDisplay = document.getElementById("current-week-day");
                 dayDisplay.innerHTML = getCurrentDay();
-            </script>
-            <div class="goals-in-2">
-                <h4>My goals in 2 years:</h4>
+            </script> -->
+            <div class="goals-in-2" data-testid="shortBio">
+                <h4>My Bio</h4>
                 <p>
-                    - To be remotely employed and earning in USD <br>
-                    - To have attained mid-level developer status, according to industry standards <br>
-                    - To have at least 3-5 mentees who are properly skilled under my tutorship <br>
-                    - To be a significant member of a team that has undertaken major web development projects
+                    I am an intuitive, young and tech-savvy individual with a very active knack and tingle for the technological industry. 
+                    A Mechanical Engineering graduate of the Federal University of Technology, Akure, I have over a year’s experience with 
+                    acclimatizing myself and getting acquainted with the forefront technologies associated with web development and software 
+                    engineering. <br>
+                    I have a very calm and liberal view of life and I’m very interested in making the world and the people in it work, especially 
+                    the people in it. My favorite distractions when not working include basketball and working. You can connect further with me on:
                 </p>
             </div> <br>
-            <div>
-                <h4>Other helpful links:</h4>
+            <div data-testid="socialLinks">
+                <h4>You can reach me on social media at:</h4>
                 <p>
-                    <a data-testid="hngLink" href="http://hng.tech/learn">HNG</a>
-                    <a data-testid="keywordLink" href="http://keyword.dog/">Keyword</a>
-                    <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/">Scrapeanyweb</a>
+                    <a href="https://www.linkedin.com/in/harrison-orimolade-726707190">LinkedIn</a>
+                    <a href="https://github.com/harrysink">GitHub</a>
+                    <a href="https://x.com/harrisonfemi">Twitter</a>
+                    <a href="https://hashnode.com/@harrysink">Hashnode</a>
                 </p>
             </div>
         </main>
